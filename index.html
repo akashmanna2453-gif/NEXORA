@@ -4,22 +4,22 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nexora is a cyberpunk creator and gaming hub for streamers, competitive communities, and tournament organizers." />
     <title>Nexora | Cyberpunk Creator & Gaming Hub</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/animations.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <header class="site-header">
-        <nav class="navbar container">
-            <a class="brand" href="index.html">Nexora</a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
+        <nav class="navbar container" aria-label="Main Navigation">
+            <a class="brand" href="#home">Nexora</a>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
             <div class="nav-links">
                 <a href="#home" class="nav-link active">Home</a>
@@ -36,16 +36,14 @@
 
     <main>
         <section id="home" class="hero-section">
-            <canvas id="heroCanvas" class="hero-canvas"></canvas>
+            <canvas id="heroCanvas" class="hero-canvas" aria-hidden="true"></canvas>
             <div class="hero-content container">
                 <p class="eyebrow reveal">Next-gen Cyber Hub</p>
-                <h1 class="hero-title reveal">Nexora is the neon pulse for creators, gamers, and tournament legends.
-                </h1>
-                <p class="hero-description reveal">Build your brand, level up your stream, and dominate events with
-                    premium digital spaces, community tools, and championship-grade support.</p>
+                <h1 class="hero-title reveal">Nexora is the neon pulse for creators, gamers, and tournament legends.</h1>
+                <p class="hero-description reveal">Build your brand, level up your stream, and dominate events with premium digital spaces, community tools, and championship-grade support.</p>
                 <div class="hero-actions reveal">
                     <a href="#membership" class="btn btn-primary">Join the Hub</a>
-                    <a href="pages/contact.html" class="btn btn-secondary">Schedule a Demo</a>
+                    <a href="#contact" class="btn btn-secondary">Schedule a Demo</a>
                 </div>
                 <div class="hero-stats reveal">
                     <div>
@@ -64,31 +62,31 @@
             </div>
         </section>
 
-        <section id="features" class="section features-section">
+        <section id="features" class="section">
             <div class="container section-heading reveal">
                 <span class="section-label">Core Features</span>
                 <h2>Premium tools designed for modern creators and gaming teams.</h2>
             </div>
             <div class="feature-grid container">
                 <article class="feature-card reveal">
-                    <span class="icon icon-speed"></span>
+                    <span class="icon icon-speed" aria-hidden="true"></span>
                     <h3>Performance Boost</h3>
                     <p>Ultra-fast hosting, live stats, and real-time overlay integration for every creator workflow.</p>
                 </article>
                 <article class="feature-card reveal">
-                    <span class="icon icon-vision"></span>
+                    <span class="icon icon-vision" aria-hidden="true"></span>
                     <h3>Pro Stream Tools</h3>
                     <p>Custom layouts, animated alerts, and brandable assets built for serious streamers.</p>
                 </article>
                 <article class="feature-card reveal">
-                    <span class="icon icon-secure"></span>
+                    <span class="icon icon-secure" aria-hidden="true"></span>
                     <h3>Secure Community</h3>
                     <p>Encrypted messaging, moderation dashboards, and community rules for safe play.</p>
                 </article>
             </div>
         </section>
 
-        <section id="services" class="section services-section">
+        <section id="services" class="section">
             <div class="container section-heading reveal">
                 <span class="section-label">Pro Services</span>
                 <h2>Design, launch, and scale your gaming brand with expert support.</h2>
@@ -109,7 +107,7 @@
             </div>
         </section>
 
-        <section id="membership" class="section membership-section">
+        <section id="membership" class="section">
             <div class="container section-heading reveal">
                 <span class="section-label">Membership</span>
                 <h2>Choose the plan that powers your creator journey.</h2>
@@ -123,7 +121,7 @@
                         <li>Basic streaming tools</li>
                         <li>Community access</li>
                     </ul>
-                    <a href="pages/membership.html" class="btn btn-outline">Get Started</a>
+                    <a href="#contact" class="btn btn-outline">Get Started</a>
                 </article>
                 <article class="pricing-card pricing-card-highlight reveal">
                     <h3>Creator</h3>
@@ -133,7 +131,7 @@
                         <li>Event registration</li>
                         <li>Priority support</li>
                     </ul>
-                    <a href="pages/membership.html" class="btn btn-primary">Join Creator</a>
+                    <a href="#contact" class="btn btn-primary">Join Creator</a>
                 </article>
                 <article class="pricing-card reveal">
                     <h3>Elite</h3>
@@ -143,12 +141,12 @@
                         <li>Brand development</li>
                         <li>VIP tournament invites</li>
                     </ul>
-                    <a href="pages/membership.html" class="btn btn-outline">Upgrade Now</a>
+                    <a href="#contact" class="btn btn-outline">Upgrade Now</a>
                 </article>
             </div>
         </section>
 
-        <section id="gallery" class="section gallery-section">
+        <section id="gallery" class="section">
             <div class="container section-heading reveal">
                 <span class="section-label">Gallery</span>
                 <h2>A visual showcase of Nexora’s energy and community highlights.</h2>
@@ -163,7 +161,7 @@
             </div>
         </section>
 
-        <section id="tournaments" class="section tournament-section">
+        <section id="tournaments" class="section">
             <div class="container section-heading reveal">
                 <span class="section-label">Tournaments</span>
                 <h2>Competitive events built for creators and esports athletes.</h2>
@@ -173,24 +171,24 @@
                     <h3>Neon Knockout</h3>
                     <p>Open qualifier event with a cash prize pool and live broadcast support.</p>
                     <div class="prize">Prize Pool: $5,000</div>
-                    <a href="pages/tournaments.html" class="btn btn-secondary">Register Now</a>
+                    <a href="#contact" class="btn btn-secondary">Register Now</a>
                 </article>
                 <article class="tournament-card reveal">
                     <h3>Creator Clash</h3>
                     <p>Creator-only league with branded match overlays and community exposure.</p>
                     <div class="prize">Prize Pool: $3,200</div>
-                    <a href="pages/tournaments.html" class="btn btn-secondary">Join the League</a>
+                    <a href="#contact" class="btn btn-secondary">Join the League</a>
                 </article>
                 <article class="tournament-card reveal">
                     <h3>Future Legends</h3>
                     <p>Talent scouting tournament with coaching sessions for standout performers.</p>
                     <div class="prize">Prize Pool: $7,500</div>
-                    <a href="pages/tournaments.html" class="btn btn-secondary">Apply Today</a>
+                    <a href="#contact" class="btn btn-secondary">Apply Today</a>
                 </article>
             </div>
         </section>
 
-        <section id="creator-hub" class="section creator-section">
+        <section id="creator-hub" class="section">
             <div class="container section-heading reveal">
                 <span class="section-label">Creator Hub</span>
                 <h2>Everything modern creators need to launch and monetize their channel.</h2>
@@ -245,20 +243,17 @@
             </div>
             <div class="testimonials-grid container">
                 <article class="testimonial-card reveal">
-                    <p>“Nexora transformed our stream presence overnight. The design, tools, and tournament management
-                        are flawless.”</p>
+                    <p>“Nexora transformed our stream presence overnight. The design, tools, and tournament management are flawless.”</p>
                     <h4>Rei Nakamura</h4>
                     <span>Streamer & Team Lead</span>
                 </article>
                 <article class="testimonial-card reveal">
-                    <p>“The creator hub is exactly what our community needed. Smooth onboarding, premium branding, and
-                        zero downtime.”</p>
+                    <p>“The creator hub is exactly what our community needed. Smooth onboarding, premium branding, and zero downtime.”</p>
                     <h4>Jax Valor</h4>
                     <span>Esports Coach</span>
                 </article>
                 <article class="testimonial-card reveal">
-                    <p>“Membership access gave us access to pro tools and event invites. The neon aesthetic really fits
-                        our brand.”</p>
+                    <p>“Membership access gave us access to pro tools and event invites. The neon aesthetic really fits our brand.”</p>
                     <h4>Aya Storm</h4>
                     <span>Content Creator</span>
                 </article>
@@ -271,7 +266,7 @@
                 <h2>Ready to launch your creator experience? Connect with Nexora.</h2>
             </div>
             <div class="contact-grid container reveal">
-                <form id="contactForm" class="contact-form">
+                <form id="contactForm" class="contact-form" novalidate>
                     <div class="form-row">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" placeholder="Your name" required />
@@ -282,12 +277,12 @@
                     </div>
                     <div class="form-row">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project"
-                            required></textarea>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
-                    <p class="form-status" id="formStatus"></p>
+                    <p class="form-status" id="formStatus" aria-live="polite"></p>
                 </form>
+
                 <div class="contact-info">
                     <div class="contact-card">
                         <h3>Social</h3>
@@ -315,7 +310,7 @@
     <footer class="site-footer">
         <div class="container footer-grid">
             <div>
-                <a class="footer-brand" href="index.html">Nexora</a>
+                <a class="footer-brand" href="#home">Nexora</a>
                 <p>Modern cyberpunk design for creators, gamers, and tournament communities.</p>
             </div>
             <div class="footer-links">
@@ -335,10 +330,7 @@
         </div>
     </footer>
 
-    <script src="js/particles.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/main.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
