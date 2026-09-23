@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexora Contact | Connect with Our Team</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar container">
+            <a class="brand" href="../index.html">Nexora</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links">
+                <a href="../index.html#home" class="nav-link">Home</a>
+                <a href="../index.html#features" class="nav-link">Features</a>
+                <a href="../index.html#services" class="nav-link">Services</a>
+                <a href="../index.html#membership" class="nav-link">Membership</a>
+                <a href="../index.html#gallery" class="nav-link">Gallery</a>
+                <a href="../index.html#tournaments" class="nav-link">Tournaments</a>
+                <a href="../index.html#creator-hub" class="nav-link">Creators</a>
+                <a href="#contact" class="nav-link active">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <canvas id="heroCanvas" class="hero-canvas"></canvas>
+            <div class="hero-content container">
+                <span class="eyebrow reveal">Contact</span>
+                <h1 class="hero-title reveal">Talk to the Nexora team and bring your creative world online.</h1>
+                <p class="hero-description reveal">Support, partnerships, event requests, and creator onboarding are a
+                    message away.</p>
+                <div class="hero-actions reveal">
+                    <a href="#contact" class="btn btn-primary">Contact Us</a>
+                    <a href="../index.html#membership" class="btn btn-secondary">View Membership</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <div class="container section-heading reveal">
+                <span class="section-label">Reach Out</span>
+                <h2>Share your idea, event, or creative goals with our team.</h2>
+            </div>
+            <div class="contact-grid container reveal">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required />
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p class="form-status" id="formStatus"></p>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-card reveal">
+                        <h3>Social</h3>
+                        <p>Stay connected with team announcements and event launch details.</p>
+                        <div class="social-links">
+                            <a href="#">Twitter</a>
+                            <a href="#">Discord</a>
+                            <a href="#">YouTube</a>
+                        </div>
+                    </div>
+                    <div class="contact-card reveal">
+                        <h3>Support</h3>
+                        <p>support@nexora.io</p>
+                        <span>Response time within 24 hours.</span>
+                    </div>
+                    <div class="contact-card reveal">
+                        <h3>Location</h3>
+                        <p>Remote-first agency with global event support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="footer-brand" href="../index.html">Nexora</a>
+                <p>Connect with our team to build your next digital experience.</p>
+            </div>
+            <div class="footer-links">
+                <a href="../index.html#membership">Membership</a>
+                <a href="../index.html#tournaments">Tournaments</a>
+                <a href="../index.html#creator-hub">Creators</a>
+            </div>
+            <div class="footer-social">
+                <a href="#">TW</a>
+                <a href="#">DC</a>
+                <a href="#">YT</a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <span>© 2026 Nexora. Professional creation and event support.</span>
+        </div>
+    </footer>
+
+    <script src="../js/particles.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
